@@ -34,7 +34,7 @@ public class MovieCommentRepository {
         return commentId;
     }
 
-    public void delete(String movieId, String commentId) {
+    public void delete(String movieId, int commentId) {
         comments.removeIf(movieComment -> movieComment.getMovieId().equals(movieId) && movieComment.getComment().getId().equals(commentId));
     }
 

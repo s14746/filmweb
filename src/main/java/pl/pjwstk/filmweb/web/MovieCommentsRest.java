@@ -33,7 +33,7 @@ public class MovieCommentsRest {
 
     @Path("/{commentId}")
     @DELETE
-    public void deleteCommentToMovie(@PathParam("movieId") String movieId, @PathParam("commentId") String commentId) {
+    public void deleteCommentToMovie(@PathParam("movieId") String movieId, @PathParam("commentId") int commentId) {
         deleteCommentFromMovieService.execute(movieId, commentId);
     }
 }

@@ -9,7 +9,7 @@ public class DeleteCommentFromMovieService {
         this.movieCommentRepository = movieCommentRepository;
     }
 
-    public void execute(String movieId, String commentId) {
+    public void execute(String movieId, int commentId) {
         movieCommentRepository.delete(movieId, commentId);
     }
 }
